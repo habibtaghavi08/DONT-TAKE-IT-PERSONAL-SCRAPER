@@ -20,8 +20,9 @@ app.use(express.static("public"))
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
-// import the burger controller file
-var burger_controller = require("./controllers/burger_controller")
+
+var mongoose = require("mongoose")
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/scraperdb")
 
 // creating server via app.listen 
 app.use(PORT,function(){
