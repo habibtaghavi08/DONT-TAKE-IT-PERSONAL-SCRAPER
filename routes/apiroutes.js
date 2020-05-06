@@ -12,7 +12,9 @@ function apiRoutes(app){
         axios.get("https://www.motortrend.com/auto-news/").then(function(results){
         //   $ is part of cheerio to scrap or steal information without paying from external website
         var $ = cheerio.load(results.data)
-        console.log($)
+        console.log(results.data)
+
+        res.json(results.data)
         })
       
     });

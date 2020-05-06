@@ -4,7 +4,7 @@ var express = require("express")
 var app = express()
 
 // creating port
-var port = process.env.PORT || 8000
+var PORT = process.env.PORT || 8000
 
 // initalizing the handlebars setup
 var expressHandleBars = require("express-handlebars")
@@ -21,11 +21,13 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
 var apiRoutes = require("./routes/apiroutes")
+
+apiRoutes(app)
 var mongoose = require("mongoose")
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/scraperdb")
 
 // creating server via app.listen 
-app.use(PORT,function(){
+app.listen(PORT, function(){
     console.log("App Is Listening http://localhost:" + PORT)
 })
 
