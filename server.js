@@ -20,7 +20,7 @@ app.use(express.static("public"))
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
-
+var apiRoutes = require("./routes/apiroutes")
 var mongoose = require("mongoose")
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/scraperdb")
 

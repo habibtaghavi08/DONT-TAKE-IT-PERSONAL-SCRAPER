@@ -1,19 +1,19 @@
-var mongoose=require("mongoose")
+var mongoose = require("mongoose")
 
-var Schema=mongoose.Schema
+var Schema = mongoose.Schema
 
-var noteSchema = new Schema(
-    title:{
-        type:{
+var noteSchema = new Schema({
+    title: {
+        type: {
             String
-        },
-        body:{
-            type:{
-              String          
-            }, 
+        }
+    },
+    body: {
+        type: {
+            String
         }
     }
-) 
+})
 
 var Note = mongoose.model("Note", noteSchema)
 module.exports = note
