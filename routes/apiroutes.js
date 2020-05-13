@@ -71,6 +71,29 @@ function apiRoutes(app){
            res.json(results)
        })
     })
+    app.delete("/api/articles/:id", function(req,res){
+        var id = req.params.id
+ 
+        db.Article.remove({_id:id}).then(function(results){
+            res.json(results)
+        })
+     })
+     app.get("/saved", (req, res) => {
+        db.Article.find({saved:true}).then(function(results){
+            var newResults = [] 
+            for (let index = 0; index < results.length; index++) {
+               
+                newResults.push({
+                    title: results[index].title,
+                    summary:results[index].summary,
+                    link:results[index].link,
+                    image:results[index].image,
+                    _id:results[index]._id
+                })
+            }
+            res.render("saved", {articles:newResults})
+        })
+     });
 }
 
 module.exports = apiRoutes
