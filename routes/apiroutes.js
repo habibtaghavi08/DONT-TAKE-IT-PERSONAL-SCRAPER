@@ -48,7 +48,7 @@ function apiRoutes(app){
 
 
     app.get("/", (req, res) => {
-      db.Article.find().then(function(results){
+      db.Article.find({saved:false}).then(function(results){
           var newResults = [] 
           for (let index = 0; index < results.length; index++) {
              
@@ -56,12 +56,21 @@ function apiRoutes(app){
                   title: results[index].title,
                   summary:results[index].summary,
                   link:results[index].link,
-                  image:results[index].image
+                  image:results[index].image,
+                  _id:results[index]._id
               })
           }
           res.render("index", {articles:newResults})
       })
     });
+
+    app.put("/api/articles/:id", function(req,res){
+       var id = req.params.id
+
+       db.Article.update({_id:id}, {saved:true}).then(function(results){
+           res.json(results)
+       })
+    })
 }
 
 module.exports = apiRoutes
