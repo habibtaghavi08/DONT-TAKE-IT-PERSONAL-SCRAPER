@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 8000
 var expressHandleBars = require("express-handlebars")
 app.engine("handlebars", expressHandleBars({defaultLayout:"main" }))
 
-// setting the view engine to handlebars
+// setting the view engine to handlebars without can not view handlebars
 app.set("view engine", "handlebars")
 
 // creating public folder as the URL localhost path

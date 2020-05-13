@@ -1,0 +1,16 @@
+
+<div class="container">
+
+    {{#each articles}}
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="{{image}}" width ="100%" alt="" target ="_blank" >
+        </div>
+        <div class="col-sm-9">
+              <a href="{{link}}"> <h2>{{title}}</h2></a>   
+              <p>{{summary}}</p>  
+        </div>
+    </div>
+
+    {{/each}}
+</div>
