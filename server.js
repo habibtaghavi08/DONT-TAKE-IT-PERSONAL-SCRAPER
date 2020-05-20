@@ -22,12 +22,12 @@ app.use(express.json())
 
 var apiRoutes = require("./routes/apiroutes")
 
+//mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/scraperdb")
 apiRoutes(app)
 var mongoose = require("mongoose")
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scraperdb"
-mongoose.connect(MONGODB_URI)
-//mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/scraperdb")
 
+ mongoose.connect(MONGODB_URI)
 
 
 // creating server via app.listen 
