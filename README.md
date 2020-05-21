@@ -34,7 +34,7 @@ The Burger Application is a demo of the ability to utilize a database to use CRU
 
 ## Getting Started
 
-These instructions will get you a cloned copy of my project [Eat-Da-Burger App on GitHub Repo](https://github.com/habibtaghavi08/Eat-Da-Burger.git) up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a cloned copy of my project [DON'T-TAKE-IT-PERSONAL-LINK](https://github.com/habibtaghavi08/DONT-TAKE-IT-PERSONAL-SCRAPER.git) up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -47,7 +47,7 @@ What things you need:
 Open your Code editing software (example Visual Studio)
 
 Open the "Terminal" in studio
-perform a git clone from my... [Eat-Da-Burger App on GitHub Repo](https://github.com/habibtaghavi08/Eat-Da-Burger.git)
+perform a git clone from my... [DON'T-TAKE-IT-PERSONAL-SCRAPER](https://github.com/habibtaghavi08/DONT-TAKE-IT-PERSONAL-SCRAPER.git)
 ```
 
 ### Installing
@@ -71,12 +71,7 @@ Next open MySQL and create a new "connection"
 
 Now you will create your own .env file in the root folder and enter the following info.
 
-```DotENV File
-   DBhost = "localhost"
-   DBuser = "root" or your username
-   DBPass = "root" or your pass word chosen
 
-```
 
 Now go into the (/db/schema.sql) and (db/seeds.sql) files and copy the information and enter into your workbench.
 Be sure to run the code to create your DB (data base) and Tables. Then on the seeds file, run that code to create the usable information.
@@ -90,7 +85,7 @@ Now you will want to run the web site locally.
 This will open your terminal in your "Root" folder and allow you to run the server "you may have done this already to get your  "npm i " completed
 
 ```node server.js
-  node server.js
+   node server.js
 ```
 
 ### You should now see the serving running
@@ -116,18 +111,19 @@ App was deployed with [Heroku](https://dashboard.heroku.com/apps)
 * Thank You to ..... VANDERBILT UNIVERSITY
 * Thank You to ..... My Tutor & My Mentor PHIL LOY, for with out him, I would not have been able to graduate with an A average or have the skills   I have today, and be the Amazing & Skilled SoftWare Engineer I have become
 * Thanks to our Class instructors, Sub-Instructors, and the TAs that have helped define and layout the expectations of the assignment
+
 # ScrapeTheNews
 Let's the user find some latest news articles to save and comment on them.
 
-The NewsScraper Applicaton is a demo of the ability to utilize :add more descirption later. 
+The NewsScraper Application is a demo of the ability to utilize :add more description later. 
 
-### [Scrape The News Link]( https://reasonwithme.herokuapp.com/)
+## [DON'T-TAKE-IT-PERSONAL-LINK](https://dont-take-personal-scrape.herokuapp.com/ )
 
 ![webNewsScrape](./public/assets/images/efficient-web-scraping.png)
 
 ## Getting Started
 
-These instructions will get you a copy of the project [NewsScraper](https://github.com/Mlusso06/ScrapeTheNewsr) up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project [DON'T-TAKE-IT-PERSONAL-SCRAPER](https://github.com/habibtaghavi08/DONT-TAKE-IT-PERSONAL-SCRAPER.git) up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -135,32 +131,30 @@ What things you need:
 * code editing [Visual Studio](https://visualstudio.microsoft.com/)
 * work bench ui [robo3t](https://robomongo.org/)
 
-
-```
-Open your Code editing software (example Visual Studio)
+```Open your Code editing software (example Visual Studio)
 
 Open the "Terminal" in studio
-perform a git clone https://github.com/Mlusso06/ScrapeTheNews.git
+perform a git clone https://github.com/habibtaghavi08/DONT-TAKE-IT-PERSONAL-SCRAPER.git
 ```
 
 ### Installing
 
-After having the files cloned into your Studio, I would perform a 
-* "Save Workspace AS" to have a workspace to come back to.
+After having the files cloned into your Studio, I would perform a
+* "Save Workspace AS" to have a workspace to come back to
 * Next you will need to install your code's Dependencies
-    * This will capture all the items in your package.json file
+* This will capture all the items in your package.json file
 
-See below on how to perfom the install.
+See below on how to perform the install.
 
-```
-npm i
-```
+```npm i
+``
 You will be installing the following npm packages:
+
 * express
 * express-handlebars
 * mongoose
 * cheerio
-* axios 
+* axios
 
 
 Next open MySQL and create a new "connection"
@@ -172,8 +166,7 @@ Now you will create your own .env file in the root folder and enter the followin
 
 
 
-```
-Now go into the (/models/schema.sql) and (seeds.sql) files and copy the information and enter into your workbench.
+```Now go into the (/models/schema.sql) and (seeds.sql) files and copy the information and enter into your workbench.
 Be sure to run the code to create your DB (data base) and Tables.  Then on the seeds file, run that code to create the usable information.
 
 ## Running the server
@@ -187,21 +180,21 @@ This will open your terminal in your "Root" folder and allow you to run the serv
 ```node server.js
 ```
 
-### You should now see the serving running
+## You should now see the serving running
 
 click on the link to open your web browser "local host"
 
 ```Server listening on: http://localhost:8000
 ```
 
-# Project work
+
 
 ## Deployment
 
 We deployed with [Heroku](https://dashboard.heroku.com/apps)
 using the the app [mLab](https://reasonwithme.herokuapp.com/)
 
-#### read individual instructions for more detal
+#### read individual instructions for more detail
 
 ## The Web site was Built With
 
