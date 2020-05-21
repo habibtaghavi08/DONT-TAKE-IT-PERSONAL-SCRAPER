@@ -29,7 +29,9 @@ The Burger Application is a demo of the ability to utilize a database to use CRU
 * JQuery
 * API's
 * API Routing
-* AJAX
+* Axios
+* Cheerio
+* mLab
 
 ## Getting Started
 
@@ -70,11 +72,6 @@ Next open MySQL and create a new "connection"
 
 Now you will create your own .env file in the root folder and enter the following info.
 
-
-
-Now go into the (/db/schema.sql) and (db/seeds.sql) files and copy the information and enter into your workbench.
-Be sure to run the code to create your DB (data base) and Tables. Then on the seeds file, run that code to create the usable information.
-
 ## Running the server
 
 Now you will want to run the web site locally.
@@ -111,10 +108,11 @@ App was deployed with [Heroku](https://dashboard.heroku.com/apps)
 * Thank You to ..... My Tutor & My Mentor PHIL LOY, for with out him, I would not have been able to graduate with an A average or have the skills   I have today, and be the Amazing & Skilled SoftWare Engineer I have become
 * Thanks to our Class instructors, Sub-Instructors, and the TAs that have helped define and layout the expectations of the assignment
 
-# ScrapeTheNews
+## ScrapeTheNews
+
 Let's the user find some latest news articles to save and comment on them.
 
-The NewsScraper Application is a demo of the ability to utilize :add more description later. 
+The NewsScraper Application is a demo of the ability to utilize :add more description later.
 
 ## [DON'T-TAKE-IT-PERSONAL-LINK](https://dont-take-personal-scrape.herokuapp.com/ )
 
