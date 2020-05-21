@@ -11,8 +11,7 @@ The Burger Application is a demo of the ability to utilize a database to use CRU
 
 ## DON'T-TAKE-IT-PERSONAL- NEWS SCRAPER APP
 
-![DON'T-TAKE-IT-PERSONAL- NEWS SCRAPER](/public/assets/images/burger.png)
-
+![DON'T-TAKE-IT-PERSONAL- NEWS SCRAPER](https://github.com/habibtaghavi08/DONT-TAKE-IT-PERSONAL-SCRAPER.git)
 
 ## TECHNOLOGIES USED
 
